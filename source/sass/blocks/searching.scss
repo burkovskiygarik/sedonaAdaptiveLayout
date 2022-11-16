@@ -1,0 +1,99 @@
+.searching {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.searching__container {
+  padding-top: 12px;
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-bottom: 28px;
+}
+
+.searching__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  margin: 0;
+}
+
+.searching__description {
+  font-size: 14px;
+  line-height: 24px;
+  color: $grey;
+  margin-bottom: 40px;
+}
+
+.searching__map {
+  height: 350px;
+  margin-top: 49px;
+  background-image: url("../../img/icon-map-marker.svg"), url("../../img/bg-map-mobile@1x.jpg");
+  background-size: 27px 27px, cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/icon-map-marker.svg"), url("../../img/bg-map-mobile@2x.jpg");
+  }
+}
+
+.searching__button {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+@media (max-width: $mobile-width-only) {
+  .searching__description br {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .searching__container {
+    padding-top: 26px;
+    padding-left: 21%;
+    padding-right: 21%;
+    padding-bottom: 39px;
+  }
+
+  .searching__title {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 33px;
+    margin: 0;
+  }
+
+  .searching__map {
+    margin-top: 58px;
+    background-image: url("../../img/icon-map-marker.svg"), url("../../img/bg-map-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/icon-map-marker.svg"), url("../../img/bg-map-tablet@2x.jpg");
+    }
+  }
+
+  .searching__button {
+    padding-left: 136px;
+    padding-right: 136px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .searching__container {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+
+  .searching__map {
+    margin-top: 66px;
+    background-image: url("../../img/icon-map-marker.svg"), url("../../img/bg-map-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/icon-map-marker.svg"), url("../../img/bg-map-desktop@2x.jpg");
+    }
+  }
+}
+
+

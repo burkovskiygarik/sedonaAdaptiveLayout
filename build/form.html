@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Отзыв</title>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+
+<body>
+
+  <div class="page-container">
+
+    <header class="main-header">
+
+      <nav class="main-nav main-nav--nojs">
+
+        <div class="main-nav__logo">
+          <a class="main-nav__logo-link">
+            <svg class="logo" width="187" height="96" role="img" aria-label="логотип Седона">
+              <use class="logo__frame" xlink:href="img/sprite.svg#logo-frame"></use>
+              <use class="logo__sedona" xlink:href="img/sprite.svg#logo-sedona"></use>
+              <use class="logo__bridge" xlink:href="img/sprite.svg#logo-bridge"></use>
+              <use class="logo__clouds" xlink:href="img/sprite.svg#logo-clouds"></use>
+            </svg>
+          </a>
+        </div>
+
+        <button class="main-nav__toggle " type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catolog.html">Фото и видео</a>
+          </li>
+
+          <li class="main-nav__item"></li>
+
+          <li class="main-nav__item main-nav__item--current">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://github.com/burkovskiygarik">GitHub</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <main>
+      <header class="main-print">
+        <img class="print" src="img/text-sedona-index.svg" alt="Логотип Седоны." width="458" height="352">
+      </header>
+
+      <section class="feedback">
+        <h2 class="visually-hidden">Оставить свой отзыв</h2>
+        <div class="feedback__header">
+          <p class="feedback__title">Оставьте свой отзыв</p>
+          <p class="feedback__intro">
+            Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          </p>
+        </div>
+
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+
+          <fieldset class="form__fieldset form__fieldset--tp1">
+            <legend class="form__fieldset-title">Представьтесь:</legend>
+            <div class="form__field">
+              <label for="name">Имя*:</label>
+              <input type="text" name="name" id="name" placeholder="Петр" required>
+            </div>
+            <div class="form__field">
+              <label for="surname">Фамилия*:</label>
+              <input type="text" name="surname" id="surname" placeholder="Иванов" required>
+            </div>
+            <div class="form__field">
+              <label for="patronymic">Отчество:</label>
+              <input type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset--tp2">
+            <legend class="form__fieldset-title">Контактная информация:</legend>
+            <div class="form__field-wrapper">
+              <div class="form__field">
+                <label for="phone"><span>Контактный</span> телефон*:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+                <div class="form__field-icon">
+                  <svg width="18" height="18">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="form__field">
+                <label for="email">Электронная почта*:</label>
+                <input type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                <div class="form__field-icon">
+                  <svg width="16" height="16">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset--tp3">
+            <legend class="form__fieldset-title">Ваше общее впечатление:</legend>
+            <div class="form__field">
+              <input type="radio" name="impressions" value="good" id="filter-good" checked>
+              <label for="filter-good" tabindex="0">Скорее положительное</label>
+            </div>
+            <div class="form__field">
+              <input type="radio" name="impressions" value="bad" id="filter-negative">
+              <label for="filter-negative" tabindex="0">Скорее отрицательное</label>
+            </div>
+            <div class="form__field">
+              <input type="radio" name="impressions" value="complicate" id="filter-complicate">
+              <label for="filter-complicate" tabindex="0">Затрудняюсь ответить</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset--tp4">
+            <legend class="form__fieldset-title">Посещенные достопримечательности:</legend>
+            <div class="form__checkbox">
+              <div class="form__field">
+                <input type="checkbox" name="bridge" id="filter-bridge" checked>
+                <label for="filter-bridge" tabindex="0">Мост Дьявола</label>
+              </div>
+              <div class="form__field">
+                <input type="checkbox" name="mountain" id="filter-mountain" checked>
+                <label for="filter-mountain" tabindex="0">Гора-Колокол</label>
+              </div>
+              <div class="form__field">
+                <input type="checkbox" name="park" id="filter-park" checked>
+                <label for="filter-park" tabindex="0">Слайд-парк</label>
+              </div>
+              <div class="form__field">
+                <input type="checkbox" name="rocks" id="filter-rocks">
+                <label for="filter-rocks" tabindex="0">Красные скалы</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset--tp5">
+            <legend class="form__fieldset-title">Опишите свои эмоции:</legend>
+            <div class="form__field">
+              <textarea name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
+          </fieldset>
+
+          <button class="button form__button" type="submit">Отправить отзыв</button>
+          <span class="form__required">* — обязательные поля</span>
+        </form>
+      </section>
+
+
+    </main>
+
+    <footer class="main-footer">
+      <address class="main-footer__number">
+        <h3 class="visually-hidden">Контактыный телефон</h3>
+        <a href="tel:+79279107000">+7 (927) 910-70-00</a>
+      </address>
+
+      <section class="main-footer__social social">
+        <h2 class="visually-hidden">Контакты для обратной связи</h2>
+
+        <ul class="social__list">
+          <h3 class="visually-hidden">Социальные сети</h3>
+
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://vk.com/bivarch">
+              <span class="visually-hidden">ВКонтакте.</span>
+              <svg width="18" height="15">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link--tg" href="https://t.me/Burkovskii">
+              <span class="visually-hidden">Телеграм.</span>
+              <svg width="9" height="19">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link--yt" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб.</span>
+              <svg width="20" height="14">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработал:</b>
+        <a class="copyright__link" href="https://github.com/burkovskiygarik">Burkovskii Igor</a>
+      </div>
+
+    </footer>
+  </div>
+
+  <section class="modal modal-wrong">
+    <h2 class="modal__title">
+      Что-то пошло не так!
+    </h2>
+    <p class="modal__description">
+      Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+    </p>
+    <button class="button modal-wrong--button">
+      Ок
+    </button>
+  </section>
+
+  <section class="modal modal-right">
+    <h2 class="modal__title">
+      Ваш отзыв отправлен!
+    </h2>
+    <p class="modal__description">
+      Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.
+    </p>
+    <div>
+      <button class="button button--modal-right">
+        Закрыть окно
+      </button>
+    </div>
+  </section>
+
+  <script src="js/menu.js"></script>
+
+</body>
+
+</html>

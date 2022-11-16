@@ -1,0 +1,12 @@
+.main-nav__logo-link {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -93px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__logo-link {
+    top: 0;
+  }
+}

@@ -1,0 +1,33 @@
+.content {
+
+}
+
+.content__conteiner {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 34px;
+}
+
+.content__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.content__text {
+  font-size: 14px;
+  line-height: 24px;
+  padding-top: 28px;
+  margin: 0;
+}
+
+.item__video {
+  text-align: center;
+}
+
+.video {
+  width: 90%;
+  aspect-ratio: 16 / 9;
+}

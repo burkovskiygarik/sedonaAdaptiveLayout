@@ -1,0 +1,28 @@
+.modal-right {
+  width: 320px;
+  height: 280px;
+  top: 5%;
+  left: 50%;
+  margin-left: -160px;
+}
+
+.modal-right div {
+  margin-top: 39px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $lightergrey;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-right {
+    width: 640px;
+    height: 347px;
+    margin-left: -320px;
+  }
+
+  .modal-succes div {
+    margin-top: 42px;
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+}
